@@ -284,4 +284,57 @@ Digite um número real: 2.55
 4.55
 >>> type(s)
 <class 'str'>
+================================ RESTART: Shell ================================
+
+A = int(input('Digite um valor para A: '))
+B = int(input('Digite um valor para B: '))
+
+if B == 0:
+    print('Não é possível calcular a divisão')
+else:
+    R = A / B
+    print('resultado: R = %.1f' % R)
+----------------------------------------------------------
+PH = float(input('Digite um valor do PH: '))
+if PH < 7.0:
+  print('Solução ácida')
+elif PH == 7.0:
+  print('Solução neutra')
+else:
+  print('Solução básica')
+----------------------------------------------------------
+a = int(input('Digite um valor para A: '))
+b = int(input('Digite um valor para B: '))
+c = int(input('Digite um valor para C: '))
+
+if a <= b and a <= c:     # A é o menor dos três
+  if b <= c:              # Decide o menor entre o B e o C
+    print('Ordem crescente: {}, {}, {}'.format(a, b, c))
+  else:
+    print('Ordem crescente: {}, {}, {}'.format(a, c, b))
+elif b <= a and b <= c:   # B é o menor dos três
+  if a <= c:              # Decide o menor entre o A e o C
+    print('Ordem crescente: {}, {}, {}'.format(b, a, c))
+  else:
+    print('Ordem crescente: {}, {}, {}'.format(b, c, a))
+else:                     # C é o menor dos três (o que sobrou)
+  if a <= b:              # Decide o menor entre o A e o B
+    print('Ordem crescente: {}, {}, {}'.format(c, a, b))
+  else:
+    print('Ordem crescente: {}, {}, {}'.format(c, b, a))
+-------------------------------------------------------
+print('Inicio do programa')
+cont = 1            # Inicialização
+while cont <= 10:   # Condição
+  print(cont)       # Corpo do laço
+  cont += 1         # Iteração
+print('Fim do programa')
+-------------------------------------------------------
 """
+x = int(input('Digite um número: '))
+while x != 0:
+  if x % 2 == 0:
+    print(x, 'é par')
+  else:
+    print(x, 'é impar')
+  x = int(input('Digite um número: '))
