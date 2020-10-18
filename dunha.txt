@@ -1,0 +1,1 @@
+O padrão de leitura de arquivo que discutimos em seguida é útil quando precisamos processar as palavras de um arquivo. Para acessar as palavras de um arquivo, podemos ler o conteúdo do arquivo em uma string e usar a função de string split(), em sua forma padrão, para separar o conteúdo em uma lista de palavras.
