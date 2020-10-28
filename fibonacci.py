@@ -19,8 +19,8 @@ i = 0
 
 while i < N-2: # O laço tem que exibir N - 2 termos, pois os dois primeiros já foram exibidos fora do laço
     C = A + B
-    print('{}, '.format(C), end='') # o end suprime a mudança de linha
-    A = B                           # na exibição da tela
+    print('{}, '.format(C), end='') # o end suprime a mudança de linha na exibição da tela
+    A = B
     B = C
     i += 1
 
