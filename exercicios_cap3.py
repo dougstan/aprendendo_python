@@ -72,7 +72,7 @@ print('O lutador', nome, 'pesa', peso, 'kg e se enquadra na categoria', categori
 """
 
 # Escreva um programa que leia o valor hora que um profissional ganha na empresa onde trabalha. Leia também as quantidades de horas normais e horas extras trabalhadas em um mês. Calcule o valor a ser recebido pelo profissional nesse mês, sabendo que nas horas extras o pagamento é dobrado.
-
+"""
 valor_hora = float(input('Digite o valor da hora de trabalho: '))
 hora = int(input('Digite a quantidade de horas trabalhadas: '))
 hora_extra = int(input('Digite a quantidade se horas extras, se teve: '))
@@ -80,3 +80,75 @@ hora_extra = int(input('Digite a quantidade se horas extras, se teve: '))
 salario = (valor_hora * hora) + ((valor_hora * 2) * hora_extra)
 
 print('Você irá receber de salário a quantia de R$ {:.2f}'.format(salario))
+"""
+
+# Escreva um programa que mostre na tela todos os números inteiros de 1 a 10. Para fazer esse programa, será necessário usar o comando de repetição while. 
+"""
+c = 1
+while c <= 10:
+    print(c)
+    c += 1
+"""
+
+# Escreva um programa que leia um número inteiro e, em seguida, apresen-te na tela a tabuada de 0 a 10 para esse número fornecido. Siga o formato apresentado a seguir (supondo que foi digitado 4): 4 x 1 = 4...
+"""
+num = int(input('Digite um número: '))
+c = 1
+print('Tabuada do ', num)
+
+while c <= 10:
+    print(num, 'x', c, '=', num*c)
+    c += 1
+"""
+
+# Escreva um programa que leia um número inteiro N e, em seguida, leia N números reais, calculando a soma de todos os valores positivos fornecidos e ignorando os negativos. Este exercício pode ser elaborado a partir do Exercício resolvido 3.1, no qual, em vez de gerar números aleatórios, os valores sejam lidos do teclado. 
+"""
+n = int(input('Digite N: '))
+total = 0
+c = 1
+
+while c <= n:
+    x = float(input('Digite um número: '))
+    if x > 0:
+        total = total + x
+    c += 1
+
+print('Soma dos valores positivos inseridos:', total)
+"""
+
+# Escreva um programa que leia valores numéricos inteiros e totalize separadamente os positivos e os negativos até que o usuário digite 0. Ao final, mostre na tela esses dois totais. 
+"""
+n = int(input('Digite um número (digite 0 para terminar): '))
+totalP = 0
+totalN = 0
+
+while n != 0:
+    if n > 0:
+        totalP = totalP + n
+    else:
+        totalN = totalN + n
+    n = int(input('Digite um número (digite 0 para terminar): '))
+
+print('Total dos números positivos:', totalP)
+print('Total dos números negativos:', totalN)
+"""
+
+# Escreva um programa que calcule os N primeiros termos de uma PG com razão R e o primeiro termo P1 fornecidos pelo usuário. Também deve ser calculada e apresentada a soma desses N termos.
+
+print('\n----Programa Progressão Geométrica----')
+p1 = int(input('Digite um número: '))
+razao = int(input('Digite a razão de sua PG: '))
+termo = int(input('Quantos termos da PG serão somados? '))
+soma = 0
+c = 1
+
+while c <= termo:
+    soma = soma + p1 
+    print(p1, end=', ')
+    p1 = p1 + razao
+    c += 1
+
+print('\nSoma dos', termo, 'termo(s) da PG:', soma)
+
+
+
