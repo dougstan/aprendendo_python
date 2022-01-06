@@ -34,7 +34,7 @@ else:
 novoSalario = salario + a
 
 print("O seu novo salário é de", "%.2f"%novoSalario, "com o valor do reajuste de", "%.2f"%a, "e a porcentagem de aumento de", r, "%")
-=======
+
 '''
 A empresa ABC resolveu conceder um aumento de salários a seus funcionários de acordo com a tabela abaixo:
 ------------------------------------------------
